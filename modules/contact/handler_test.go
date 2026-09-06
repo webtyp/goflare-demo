@@ -5,9 +5,9 @@ package contact
 import (
 	"testing"
 
-	"github.com/tinywasm/ddl"
-	"github.com/tinywasm/orm"
-	"github.com/tinywasm/sqlite"
+	"webtyp.com/ddl"
+	"webtyp.com/orm"
+	"webtyp.com/sqlite"
 )
 
 // TestContactCreate_Local reproduces the POST /api/contacto path locally against

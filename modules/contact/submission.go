@@ -1,6 +1,6 @@
 package contact
 
-import "github.com/tinywasm/json"
+import "webtyp.com/json"
 
 // NewContact construye un Contact desde el JSON no confiable de una
 // petición. Fuerza ID=0 para que el cliente NUNCA pueda fijar la primary key — D1 la

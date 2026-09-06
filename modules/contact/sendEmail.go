@@ -1,9 +1,9 @@
 package contact
 
 import (
-	"github.com/tinywasm/fetch"
-	"github.com/tinywasm/fmt"
-	"github.com/tinywasm/json"
+	"webtyp.com/fetch"
+	"webtyp.com/fmt"
+	"webtyp.com/json"
 )
 
 func sendEmail(data Contact, apiKey string) error {

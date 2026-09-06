@@ -34,11 +34,11 @@ servir nada**: se cae el demo entero, D1 incluido.
 
 ## 2. Dominio Personalizado
 
-Para configurar `goflare-demo.tinywasm.app`:
+Para configurar `goflare-demo.webtyp.com`:
 
 1. En el proyecto de Pages, ve a **Custom domains**.
 2. Haz clic en **Add custom domain**.
-3. Introduce `goflare-demo.tinywasm.app`.
+3. Introduce `goflare-demo.webtyp.com`.
 4. Cloudflare detectará que el dominio está en la misma cuenta y ofrecerá configurar el DNS automáticamente.
 5. Asegúrate de que el registro sea un **CNAME** apuntando a `goflare-demo.pages.dev` con el **Proxy activado** (nube naranja).
 

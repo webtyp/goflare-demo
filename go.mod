@@ -1,27 +1,27 @@
-module github.com/tinywasm/goflare-demo
+module webtyp.com/goflare-demo
 
 go 1.25.2
 
 require (
-	github.com/tinywasm/cloudflare v0.0.16
-	github.com/tinywasm/css v0.4.20
-	github.com/tinywasm/ddl v0.0.12
-	github.com/tinywasm/dom v0.13.9
-	github.com/tinywasm/env v0.0.9
-	github.com/tinywasm/fetch v0.1.24
-	github.com/tinywasm/fmt v0.25.7
-	github.com/tinywasm/form v0.4.0
-	github.com/tinywasm/goflare v0.5.29
-	github.com/tinywasm/html v0.0.19
-	github.com/tinywasm/input v0.0.2
-	github.com/tinywasm/js v0.0.4
-	github.com/tinywasm/json v0.5.23
-	github.com/tinywasm/model v0.1.7
-	github.com/tinywasm/orm v0.12.0
-	github.com/tinywasm/router v0.1.30
-	github.com/tinywasm/server v0.2.44
-	github.com/tinywasm/sqlite v0.3.2
-	github.com/tinywasm/unixid v0.2.26
+	webtyp.com/cloudflare v0.0.16
+	webtyp.com/css v0.4.20
+	webtyp.com/ddl v0.0.12
+	webtyp.com/dom v0.13.9
+	webtyp.com/env v0.0.9
+	webtyp.com/fetch v0.1.24
+	webtyp.com/fmt v0.25.7
+	webtyp.com/form v0.4.0
+	webtyp.com/goflare v0.5.29
+	webtyp.com/html v0.0.19
+	webtyp.com/input v0.0.2
+	webtyp.com/js v0.0.4
+	webtyp.com/json v0.5.23
+	webtyp.com/model v0.1.7
+	webtyp.com/orm v0.12.0
+	webtyp.com/router v0.1.30
+	webtyp.com/server v0.2.44
+	webtyp.com/sqlite v0.3.2
+	webtyp.com/unixid v0.2.26
 )
 
 require (
@@ -31,20 +31,6 @@ require (
 	github.com/ncruces/go-strftime v1.0.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/smallstep/truststore v0.13.0 // indirect
-	github.com/tinywasm/await v0.1.0 // indirect
-	github.com/tinywasm/base64 v0.0.5 // indirect
-	github.com/tinywasm/color v0.1.1 // indirect
-	github.com/tinywasm/context v0.0.22 // indirect
-	github.com/tinywasm/dbus v0.1.0 // indirect
-	github.com/tinywasm/filetype v0.0.5 // indirect
-	github.com/tinywasm/font v0.0.4 // indirect
-	github.com/tinywasm/jsvalue v0.0.15 // indirect
-	github.com/tinywasm/keyring v0.2.3 // indirect
-	github.com/tinywasm/sqlt v0.0.8 // indirect
-	github.com/tinywasm/storage v0.0.6 // indirect
-	github.com/tinywasm/time v0.5.4 // indirect
-	github.com/tinywasm/webauthn v0.1.1 // indirect
-	github.com/tinywasm/widget v0.6.23 // indirect
 	golang.org/x/crypto v0.53.0 // indirect
 	golang.org/x/net v0.55.0 // indirect
 	golang.org/x/sys v0.47.0 // indirect
@@ -54,4 +40,18 @@ require (
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
 	modernc.org/sqlite v1.54.0 // indirect
+	webtyp.com/await v0.1.0 // indirect
+	webtyp.com/base64 v0.0.5 // indirect
+	webtyp.com/color v0.1.1 // indirect
+	webtyp.com/context v0.0.22 // indirect
+	webtyp.com/dbus v0.1.0 // indirect
+	webtyp.com/filetype v0.0.5 // indirect
+	webtyp.com/font v0.0.4 // indirect
+	webtyp.com/jsvalue v0.0.15 // indirect
+	webtyp.com/keyring v0.2.3 // indirect
+	webtyp.com/sqlt v0.0.8 // indirect
+	webtyp.com/storage v0.0.6 // indirect
+	webtyp.com/time v0.5.4 // indirect
+	webtyp.com/webauthn v0.1.1 // indirect
+	webtyp.com/widget v0.6.23 // indirect
 )

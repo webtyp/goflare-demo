@@ -5,14 +5,14 @@ package main
 import (
 	"os"
 
-	"github.com/tinywasm/ddl"
-	"github.com/tinywasm/fmt"
-	"github.com/tinywasm/goflare-demo/modules/contact"
-	"github.com/tinywasm/goflare-demo/routes"
-	"github.com/tinywasm/goflare/devserver"
-	"github.com/tinywasm/orm"
-	"github.com/tinywasm/server/httpd"
-	"github.com/tinywasm/sqlite"
+	"webtyp.com/ddl"
+	"webtyp.com/fmt"
+	"webtyp.com/goflare-demo/modules/contact"
+	"webtyp.com/goflare-demo/routes"
+	"webtyp.com/goflare/devserver"
+	"webtyp.com/orm"
+	"webtyp.com/server/httpd"
+	"webtyp.com/sqlite"
 )
 
 func lookupArg(key string) string {

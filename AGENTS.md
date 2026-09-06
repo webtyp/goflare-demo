@@ -2,7 +2,7 @@
 
 ## Do NOT run `go build` manually
 
-The tinywasm dev server (started via the tinywasm MCP tool) watches files and
+The webtyp dev server (started via the webtyp MCP tool) watches files and
 recompiles automatically on save — both the frontend (`web/`, wasm) and the edge
 (`edge/`). Never run:
 
@@ -12,7 +12,7 @@ recompiles automatically on save — both the frontend (`web/`, wasm) and the ed
 
 It is redundant with the watcher and pollutes the tree with stale artifacts.
 
-## Verification: use the tinywasm MCP tools
+## Verification: use the webtyp MCP tools
 
 To check whether a change works, use the MCP tools instead of compiling:
 
@@ -25,11 +25,11 @@ To check whether a change works, use the MCP tools instead of compiling:
 Typical flow after editing: save → `app_get_logs` (build OK) → `browser_get_console`
 / `browser_get_errors` (runtime OK).
 
-## Use `tinywasm/fmt` — never `log` or `strings`
+## Use `webtyp/fmt` — never `log` or `strings`
 
 Binary size is a first-class constraint in this project. The stdlib `log` and `strings`
 packages pull in large dependency trees that bloat both the host binary and the WASM
-output. Use `tinywasm/fmt` instead for all string operations and output:
+output. Use `webtyp/fmt` instead for all string operations and output:
 
 - `fmt.Println(...)` instead of `log.Print(...)`  / `log.Printf(...)`
 - `fmt.Errf(...)` instead of `fmt.Errorf(...)` or `errors.New(...)`
@@ -54,7 +54,7 @@ the business logic layer.
 ## SQLite local path: always use `:memory:`
 
 Never use a relative file path (e.g. `"goflare-local.db"`) for the local SQLite DB.
-The tinywasm dev harness does not guarantee that the binary's CWD is the project root,
+The webtyp dev harness does not guarantee that the binary's CWD is the project root,
 so relative paths fail silently (502 on every request). Use `:memory:` for local dev —
 data is ephemeral per process restart, which is acceptable for a contact form demo.
 
@@ -74,7 +74,7 @@ All CI/CD configuration lives in **`workflow/spec.go`**. Never edit
 - `workflow.ReadGoflareVersion(gomodPath)` — reads the goflare version from `go.mod`.
 
 **When goflare version changes:**
-1. `go get github.com/tinywasm/goflare@vX.Y.Z`
+1. `go get webtyp.com/goflare@vX.Y.Z`
 2. `go generate ./workflow/` — regenerates `.github/workflows/deploy.yml`
 3. Commit both `go.mod`, `go.sum`, and the updated `deploy.yml`.
 

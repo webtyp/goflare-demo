@@ -1,9 +1,9 @@
 package contact
 
 import (
-	"github.com/tinywasm/router"
-	"github.com/tinywasm/json"
-	"github.com/tinywasm/orm"
+	"webtyp.com/router"
+	"webtyp.com/json"
+	"webtyp.com/orm"
 )
 
 func HandleList(db *orm.DB) router.HandlerFunc {

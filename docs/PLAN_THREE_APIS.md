@@ -2,14 +2,14 @@
 
 > Este plan se despacha vía el flujo CodeJob. Ver skill: agents-workflow.
 >
-> Es la **prueba de aceptación** de todo el trabajo hecho en `tinywasm/goflare`: si las tres
+> Es la **prueba de aceptación** de todo el trabajo hecho en `webtyp/goflare`: si las tres
 > APIs no funcionan aquí, no funcionan.
 >
 > **Prerrequisito, ya cumplido:** `goflare` publicó sus dos etapas. Usa **`goflare v0.4.1`
 > o superior** (2026-07-13): trae `goflare/edge`, `goflare/r2`, `goflare/files` y el logging
 > obligatorio del borde con recuperación de pánico, y **ya no** trae `goflare/pages` ni
 > `goflare/router`.
-> Contexto opcional: https://github.com/tinywasm/goflare/blob/main/docs/PLAN.md
+> Contexto opcional: https://github.com/webtyp/goflare/blob/main/docs/PLAN.md
 
 Autocontenido, en español.
 
@@ -20,10 +20,10 @@ Autocontenido, en español.
 `go build ./...` falla, y no por los cambios que vienen:
 
 ```
-modules/contact/list_handler.go:3:8: no required module provides package github.com/tinywasm/model
+modules/contact/list_handler.go:3:8: no required module provides package github.com/webtyp/model
 ```
 
-Alguien añadió `import "github.com/tinywasm/model"` en
+Alguien añadió `import "webtyp.com/model"` en
 [modules/contact/list_handler.go](../modules/contact/list_handler.go) sin declararlo en
 `go.mod`. Además el `go.mod` va muy por detrás del ecosistema: `goflare v0.3.6`,
 `orm v0.9.18`, `fmt v0.24.6`, `json v0.5.6`, `sqlite v0.2.3`.
@@ -37,19 +37,19 @@ las etapas 1 y 2. Este plan las salda juntas.
 
 ### 1. Reparar el `go.mod` y subir el ecosistema
 
-Añadir `github.com/tinywasm/model` (hoy se importa sin declarar) y actualizar todas las
-dependencias de `tinywasm/*` a las versiones publicadas. Verificar con `go build ./...`
+Añadir `webtyp.com/model` (hoy se importa sin declarar) y actualizar todas las
+dependencias de `webtyp/*` a las versiones publicadas. Verificar con `go build ./...`
 **antes** de tocar nada más: hay que separar "estaba roto" de "lo rompió la migración".
 
-### 2. Migrar el router al contrato `tinywasm/router` (etapa 1)
+### 2. Migrar el router al contrato `webtyp/router` (etapa 1)
 
-Tres archivos importan el fork borrado `github.com/tinywasm/goflare/router`:
+Tres archivos importan el fork borrado `webtyp.com/goflare/router`:
 
 - [routes/routes.go](../routes/routes.go)
 - [modules/contact/handler.go](../modules/contact/handler.go)
 - [modules/contact/list_handler.go](../modules/contact/list_handler.go)
 
-Pasan a `github.com/tinywasm/router`. Las firmas (`router.Context`, `router.HandlerFunc`)
+Pasan a `webtyp.com/router`. Las firmas (`router.Context`, `router.HandlerFunc`)
 no cambian de nombre — cambia de dónde vienen.
 
 Y en [edge/main.go](../edge/main.go): `goflare/pages` → `goflare/edge`, con
@@ -86,8 +86,8 @@ es **conectarlos**, no reimplementarlos.
 
 ```go
 import (
-	"github.com/tinywasm/goflare/files"
-	"github.com/tinywasm/goflare/r2"
+	"webtyp.com/goflare/files"
+	"webtyp.com/goflare/r2"
 )
 
 bucket, err := r2.NewEdge("FILES")   // el binding declarado en wrangler; falla ruidoso si no está
@@ -118,7 +118,7 @@ y, servidos desde tu dominio, se ejecutan en tu origen.
 Lo que sí es trabajo tuyo:
 
 - Declarar el binding R2 (`FILES`) en la configuración de wrangler, junto al de D1.
-- **Frontend:** subir con `tinywasm/fetch` mandando **los bytes crudos** como cuerpo del
+- **Frontend:** subir con `webtyp/fetch` mandando **los bytes crudos** como cuerpo del
   `PUT` (nada de `multipart` — decisión de la etapa 2). La respuesta 201 trae la clave: úsala
   para mostrar la imagen de vuelta con `<img src="/api/files/{clave}">`.
 - **No mandes el nombre del archivo como clave.** El servidor la ignora a propósito: el
@@ -146,7 +146,7 @@ una petición que **va bien**. `goflare` no los emite a propósito (en una libre
 en el camino caliente), pero aquí son justo lo que hace falta para ver qué ocurre:
 
 ```go
-import "github.com/tinywasm/fmt"   // en wasm, Println → console.log
+import "webtyp.com/fmt"   // en wasm, Println → console.log
 
 fmt.Println("demo: upload recibido", len(ctx.Body()), "bytes")
 fmt.Println("demo: clave devuelta", key)
@@ -181,7 +181,7 @@ es que Cloudflare la sirvió como estático y **nunca llegó a tu Worker** — m
 se prueba en navegador inyectando un `context.env` falso.
 
 Estrategia completa (la misma que rige en `goflare`):
-https://github.com/tinywasm/goflare/blob/main/docs/TESTING.md
+https://github.com/webtyp/goflare/blob/main/docs/TESTING.md
 
 ---
 
@@ -246,13 +246,13 @@ no está conectada: estarías sirviendo HTML ejecutable desde tu propio dominio.
 
 - `go build ./...` **y** `GOOS=js GOARCH=wasm go build ./...` pasan. (Hoy fallan los dos.)
 - `gotest` pasa.
-- No queda ninguna referencia a `github.com/tinywasm/goflare/router` ni a
-  `github.com/tinywasm/goflare/pages` en el repo.
+- No queda ninguna referencia a `webtyp.com/goflare/router` ni a
+  `webtyp.com/goflare/pages` en el repo.
 - **Los logs de seguimiento están puestos** y se ven en `wrangler pages deployment tail`:
   una subida correcta deja rastro (`demo: ...`), y una fallida deja el motivo que emite
   `goflare` (415 con el tipo real, 502 con el error de R2).
 - **La subida usa `goflare/files`, no una copia.** El demo **no** debe importar
-  `tinywasm/filetype` ni `tinywasm/unixid`, ni contener un `r.Put("/api/files/"...)` escrito
+  `webtyp/filetype` ni `webtyp/unixid`, ni contener un `r.Put("/api/files/"...)` escrito
   a mano: eso significaría que has duplicado la política de seguridad en vez de consumirla.
 
   ```bash
@@ -261,7 +261,7 @@ no está conectada: estarías sirviendo HTML ejecutable desde tu propio dominio.
   ```
 - **Las tres APIs, demostradas en el demo desplegado:**
   1. **D1** — el formulario de contacto guarda y lista registros.
-  2. **Router** — esas rutas están servidas por `tinywasm/router` sobre `goflare/edge`, y
+  2. **Router** — esas rutas están servidas por `webtyp/router` sobre `goflare/edge`, y
      responden **200, no 403** (los `.Public()` están puestos).
   3. **Archivos** — se sube una **imagen real** y se recupera **byte a byte idéntica**. Que
      abra en el navegador sin corromperse es el criterio, no que el `PUT` devuelva 200.

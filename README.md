@@ -5,9 +5,9 @@ This is a demonstration project using the **GoFlare** stack to build a high-perf
 
 ## Features
 
-- **Frontend WASM**: Built with `tinywasm/dom` and `tinywasm/form`.
-- **Backend Edge**: Cloudflare Workers powered by `tinywasm/goflare/workers`.
-- **Validation**: Shared logic and schemas using `tinywasm/fmt` and `tinywasm/orm`.
+- **Frontend WASM**: Built with `webtyp/dom` and `webtyp/form`.
+- **Backend Edge**: Cloudflare Workers powered by `webtyp/goflare/workers`.
+- **Validation**: Shared logic and schemas using `webtyp/fmt` and `webtyp/orm`.
 - **Styling**: Modern, responsive design with Vanilla CSS.
 
 ## Project Structure

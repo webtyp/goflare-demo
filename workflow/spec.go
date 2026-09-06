@@ -15,11 +15,11 @@ import (
 
 const (
 	// GoflareModule is the module path used to find the version in go.mod.
-	GoflareModule = "github.com/tinywasm/goflare"
+	GoflareModule = "webtyp.com/goflare"
 
 	// BinaryURLTemplate is the GitHub Releases download URL.
 	// {version} is replaced with the version read from go.mod at generate/test time.
-	BinaryURLTemplate = "https://github.com/tinywasm/goflare/releases/download/{version}/goflare-linux-amd64"
+	BinaryURLTemplate = "https://github.com/webtyp/goflare/releases/download/{version}/goflare-linux-amd64"
 
 	// DockerImage is the container image used for local CI simulation.
 	// Must have Go so TinyGo can invoke 'go' internally.
@@ -74,7 +74,7 @@ const (
 // pre-built binary. version is e.g. "v0.2.22".
 func InstallScript(version string) []string {
 	url := fmt.Sprintf(
-		"https://github.com/tinywasm/goflare/releases/download/%s/goflare-linux-amd64",
+		"https://github.com/webtyp/goflare/releases/download/%s/goflare-linux-amd64",
 		version,
 	)
 	return []string{

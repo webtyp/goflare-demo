@@ -3,11 +3,11 @@
 package main
 
 import (
-	"github.com/tinywasm/cloudflare/files"
-	"github.com/tinywasm/env"
-	"github.com/tinywasm/fmt"
-	"github.com/tinywasm/model"
-	"github.com/tinywasm/router"
+	"webtyp.com/cloudflare/files"
+	"webtyp.com/env"
+	"webtyp.com/fmt"
+	"webtyp.com/model"
+	"webtyp.com/router"
 )
 
 // La política de acceso es del DEMO, no de goflare.

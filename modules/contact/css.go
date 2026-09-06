@@ -3,13 +3,13 @@
 package contact
 
 import (
-	. "github.com/tinywasm/css"
+	. "webtyp.com/css"
 )
 
 // RenderCSS produces the styles for the contact form using design tokens
-// from tinywasm/css (theme-aware, light/dark mode automatic).
+// from webtyp/css (theme-aware, light/dark mode automatic).
 //
-// This method is //go:build !wasm because tinywasm/css is meant for SSR;
+// This method is //go:build !wasm because webtyp/css is meant for SSR;
 // the WASM frontend never includes this code so the binary stays minimal.
 func (c *Contact) RenderCSS() *Stylesheet {
 	return NewStylesheet(

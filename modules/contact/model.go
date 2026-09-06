@@ -1,8 +1,8 @@
 package contact
 
 import (
-	"github.com/tinywasm/input"
-	"github.com/tinywasm/model"
+	"webtyp.com/input"
+	"webtyp.com/model"
 )
 
 // ContactModel es la ÚNICA fuente de verdad del formulario de contacto: dibuja el
@@ -14,7 +14,7 @@ import (
 //   - model.X() solo valida; no aparece en el formulario.
 //
 // Por eso el PK lleva model.Int() y no un input: es seguro por construcción —
-// tinywasm/form no le dibuja campo, tinywasm/orm deja que D1 lo asigne
+// webtyp/form no le dibuja campo, webtyp/orm deja que D1 lo asigne
 // (AUTOINCREMENT) cuando vale 0, y NewContact fuerza ID=0 para que un cliente
 // jamás pueda inyectarlo vía JSON.
 var ContactModel = model.Definition{
@@ -29,7 +29,7 @@ var ContactModel = model.Definition{
 
 // EmailPayloadModel es un DTO de transporte hacia la API de Resend: no lleva
 // metadatos DB (no es una tabla) ni inputs (no se dibuja). Existe como Definition
-// porque tinywasm/json solo serializa a través del codec generado: un DTO escrito
+// porque webtyp/json solo serializa a través del codec generado: un DTO escrito
 // a mano no puede viajar.
 //
 // Html es model.Raw() a propósito: es marcado que ensamblamos nosotros —con la

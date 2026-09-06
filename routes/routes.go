@@ -1,9 +1,9 @@
 package routes
 
 import (
-	"github.com/tinywasm/goflare-demo/modules/contact"
-	"github.com/tinywasm/orm"
-	"github.com/tinywasm/router"
+	"webtyp.com/goflare-demo/modules/contact"
+	"webtyp.com/orm"
+	"webtyp.com/router"
 )
 
 // Register mounts the contact API.

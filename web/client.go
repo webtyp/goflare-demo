@@ -2,19 +2,19 @@
 
 package main
 
-import "github.com/tinywasm/model"
+import "webtyp.com/model"
 
 import (
-	. "github.com/tinywasm/dom"
-	"github.com/tinywasm/fetch"
-	"github.com/tinywasm/fmt"
-	"github.com/tinywasm/form"
-	. "github.com/tinywasm/html"
-	"github.com/tinywasm/json"
-	"github.com/tinywasm/unixid"
+	. "webtyp.com/dom"
+	"webtyp.com/fetch"
+	"webtyp.com/fmt"
+	"webtyp.com/form"
+	. "webtyp.com/html"
+	"webtyp.com/json"
+	"webtyp.com/unixid"
 	"syscall/js"
 
-	"github.com/tinywasm/goflare-demo/modules/contact"
+	"webtyp.com/goflare-demo/modules/contact"
 )
 
 func main() {

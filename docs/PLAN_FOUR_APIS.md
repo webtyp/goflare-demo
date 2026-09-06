@@ -3,7 +3,7 @@ message: "feat: the demo proves four APIs — router, D1, files and real Google 
 ---
 
 > Este plan se despacha vía el flujo CodeJob. Ver skill: agents-workflow.
-> Orquestado por `tinywasm/docs/DEMO_FOUR_APIS_MASTER_PLAN.md` — **Fase D (aceptación)**.
+> Orquestado por `webtyp/docs/DEMO_FOUR_APIS_MASTER_PLAN.md` — **Fase D (aceptación)**.
 > **Requiere publicadas las Fases E y F**: `user` sin `golang.org/x/oauth2` (o no entra en el
 > Worker), y `goflare/files` con `PerOwner()`.
 
@@ -57,9 +57,9 @@ señal de que el contrato está bien puesto:
 
 ```go
 import (
-    "github.com/tinywasm/goflare/edge"
-    userserver "github.com/tinywasm/user/server"
-    "github.com/tinywasm/user"
+    "webtyp.com/goflare/edge"
+    userserver "webtyp.com/user/server"
+    "webtyp.com/user"
 )
 
 auth, err := userserver.New(db, user.Config{
@@ -112,7 +112,7 @@ store.PerOwner().Mount(r)   // la clave es el id del usuario: subir otra vez REE
   la respuesta es **403** — y el demo debe **mostrarlo**, no esconderlo: es la demostración.
 - La imagen de vuelta se pinta con `<img src="/api/files/{clave}">`. La clave es el id del
   usuario; sin extensión, y no hace falta: el `Content-Type` viaja en la metadata de R2.
-- La subida manda **los bytes crudos** con `tinywasm/fetch` (`PUT`). Nada de `multipart`.
+- La subida manda **los bytes crudos** con `webtyp/fetch` (`PUT`). Nada de `multipart`.
 
 ### 6. Los logs de seguimiento se quedan
 

@@ -3,7 +3,7 @@ message: "feat: the demo proves four APIs — router, D1, files and real Google 
 ---
 
 > Este plan se despacha vía el flujo CodeJob. Ver skill: agents-workflow.
-> Orquestado por `tinywasm/docs/DEMO_FOUR_APIS_MASTER_PLAN.md` — **Fase D (aceptación)**.
+> Orquestado por `webtyp/docs/DEMO_FOUR_APIS_MASTER_PLAN.md` — **Fase D (aceptación)**.
 
 # PLAN — cola de ejecución de `goflare-demo`
 
@@ -12,7 +12,7 @@ message: "feat: the demo proves four APIs — router, D1, files and real Google 
 
 | Orden | Plan | Estado | Asunto |
 |-------|------|--------|--------|
-| 1 | [PLAN_THREE_APIS.md](PLAN_THREE_APIS.md) | ✅ **COMPLETADA** (destapó dos bugs de librería) | Reparar `go.mod`, migrar al contrato `tinywasm/router`, marcar las rutas `.Public()`, conectar la subida a R2. |
+| 1 | [PLAN_THREE_APIS.md](PLAN_THREE_APIS.md) | ✅ **COMPLETADA** (destapó dos bugs de librería) | Reparar `go.mod`, migrar al contrato `webtyp/router`, marcar las rutas `.Public()`, conectar la subida a R2. |
 | 2 | [PLAN_FOUR_APIS.md](PLAN_FOUR_APIS.md) | ☐ **BLOQUEADA** — espera Fases E y F | Login real con Google, el formulario pasa a ser registro, y **un archivo por usuario que se reemplaza**. Demuestra las **cuatro** APIs: router, D1, archivos y **autenticación**. |
 
 ## Para qué existe este repo
@@ -29,14 +29,14 @@ ejecuta aquí destapa una mentira en las librerías:
 2. **`server/httpd` registraba en el `ServeMux` sin el método** → tres métodos sobre un mismo
    path eran el mismo patrón → **panic al arrancar**. El demo lo había rodeado con un dispatch
    de método a mano.
-3. **La causa de fondo de ambas**: `tinywasm/router` publicaba una interfaz (tipos) **sin
+3. **La causa de fondo de ambas**: `webtyp/router` publicaba una interfaz (tipos) **sin
    arnés** (comportamiento). Dos implementaciones divergentes y nada que las obligara a
    coincidir. Se cerró con `router/conformance`, la suite ejecutable que toda implementación
-   debe pasar (ver `tinywasm/docs/ROUTER_CONFORMANCE_MASTER_PLAN.md`).
+   debe pasar (ver `webtyp/docs/ROUTER_CONFORMANCE_MASTER_PLAN.md`).
 
 **El plan 2, antes siquiera de empezar, ha encontrado la cuarta:**
 
-4. **`tinywasm/user` se declaraba "edge-ready" y no lo es.** Compila a wasm con el compilador
+4. **`webtyp/user` se declaraba "edge-ready" y no lo es.** Compila a wasm con el compilador
    de Go, pero **el borde se compila con TinyGo**, y ahí `golang.org/x/oauth2` → `net/http` no
    existe. El módulo de autenticación **no puede entrar en un Worker**. Lo arregla la Fase E.
 

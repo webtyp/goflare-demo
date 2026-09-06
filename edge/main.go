@@ -3,15 +3,15 @@
 package main
 
 import (
-	"github.com/tinywasm/cloudflare/d1"
-	"github.com/tinywasm/cloudflare/edge"
-	"github.com/tinywasm/cloudflare/files"
-	"github.com/tinywasm/cloudflare/r2"
-	"github.com/tinywasm/ddl"
-	"github.com/tinywasm/fmt"
-	"github.com/tinywasm/goflare-demo/modules/contact"
-	"github.com/tinywasm/goflare-demo/routes"
-	"github.com/tinywasm/router"
+	"webtyp.com/cloudflare/d1"
+	"webtyp.com/cloudflare/edge"
+	"webtyp.com/cloudflare/files"
+	"webtyp.com/cloudflare/r2"
+	"webtyp.com/ddl"
+	"webtyp.com/fmt"
+	"webtyp.com/goflare-demo/modules/contact"
+	"webtyp.com/goflare-demo/routes"
+	"webtyp.com/router"
 )
 
 // filesPrefix is where the file routes hang. It MUST end in "/": files.New

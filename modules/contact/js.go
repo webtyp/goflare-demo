@@ -3,7 +3,7 @@
 package contact
 
 import (
-	"github.com/tinywasm/js"
+	"webtyp.com/js"
 )
 
 // RenderJS provides optional client-side scripts to be included in the page.
