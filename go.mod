@@ -3,25 +3,25 @@ module webtyp.com/goflare-demo
 go 1.25.2
 
 require (
-	webtyp.com/cloudflare v0.0.16
-	webtyp.com/css v0.4.20
-	webtyp.com/ddl v0.0.12
-	webtyp.com/dom v0.13.9
-	webtyp.com/env v0.0.9
-	webtyp.com/fetch v0.1.24
-	webtyp.com/fmt v0.25.7
-	webtyp.com/form v0.4.0
-	webtyp.com/goflare v0.5.29
-	webtyp.com/html v0.0.19
-	webtyp.com/input v0.0.2
-	webtyp.com/js v0.0.4
-	webtyp.com/json v0.5.23
-	webtyp.com/model v0.1.7
-	webtyp.com/orm v0.12.0
-	webtyp.com/router v0.1.30
-	webtyp.com/server v0.2.44
-	webtyp.com/sqlite v0.3.2
-	webtyp.com/unixid v0.2.26
+	webtyp.com/cloudflare v0.0.17
+	webtyp.com/css v0.4.21
+	webtyp.com/ddl v0.0.15
+	webtyp.com/dom v0.13.10
+	webtyp.com/env v0.0.10
+	webtyp.com/fetch v0.1.28
+	webtyp.com/fmt v1.0.0
+	webtyp.com/form v0.4.7
+	webtyp.com/goflare v0.5.30
+	webtyp.com/html v0.0.21
+	webtyp.com/input v0.0.6
+	webtyp.com/js v0.0.10
+	webtyp.com/json v0.5.25
+	webtyp.com/model v0.1.8
+	webtyp.com/orm v0.12.1
+	webtyp.com/router v0.1.31
+	webtyp.com/server v0.2.45
+	webtyp.com/sqlite v0.3.5
+	webtyp.com/unixid v0.2.28
 )
 
 require (
@@ -40,18 +40,18 @@ require (
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
 	modernc.org/sqlite v1.54.0 // indirect
-	webtyp.com/await v0.1.0 // indirect
-	webtyp.com/base64 v0.0.5 // indirect
-	webtyp.com/color v0.1.1 // indirect
-	webtyp.com/context v0.0.22 // indirect
-	webtyp.com/dbus v0.1.0 // indirect
-	webtyp.com/filetype v0.0.5 // indirect
-	webtyp.com/font v0.0.4 // indirect
-	webtyp.com/jsvalue v0.0.15 // indirect
-	webtyp.com/keyring v0.2.3 // indirect
-	webtyp.com/sqlt v0.0.8 // indirect
-	webtyp.com/storage v0.0.6 // indirect
-	webtyp.com/time v0.5.4 // indirect
-	webtyp.com/webauthn v0.1.1 // indirect
-	webtyp.com/widget v0.6.23 // indirect
+	webtyp.com/await v0.1.1 // indirect
+	webtyp.com/base64 v0.0.6 // indirect
+	webtyp.com/color v0.1.2 // indirect
+	webtyp.com/context v0.0.23 // indirect
+	webtyp.com/dbus v0.1.1 // indirect
+	webtyp.com/filetype v0.0.6 // indirect
+	webtyp.com/font v0.0.5 // indirect
+	webtyp.com/jsvalue v0.1.4 // indirect
+	webtyp.com/keyring v0.2.4 // indirect
+	webtyp.com/sqlt v0.0.10 // indirect
+	webtyp.com/storage v0.0.7 // indirect
+	webtyp.com/time v0.5.5 // indirect
+	webtyp.com/webauthn v0.1.3 // indirect
+	webtyp.com/widget v0.6.24 // indirect
 )
