@@ -3,7 +3,7 @@ module webtyp.com/goflare-demo
 go 1.25.2
 
 require (
-	webtyp.com/cloudflare v0.0.17
+	webtyp.com/cloudflare v0.0.18
 	webtyp.com/css v0.4.21
 	webtyp.com/ddl v0.0.15
 	webtyp.com/dom v0.13.10
