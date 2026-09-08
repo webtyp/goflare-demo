@@ -4,7 +4,7 @@ go 1.25.2
 
 require (
 	webtyp.com/cloudflare v0.0.18
-	webtyp.com/css v0.4.21
+	webtyp.com/css v0.4.22
 	webtyp.com/ddl v0.0.15
 	webtyp.com/dom v0.13.12
 	webtyp.com/env v0.0.10
