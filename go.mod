@@ -6,11 +6,11 @@ require (
 	webtyp.com/cloudflare v0.0.18
 	webtyp.com/css v0.4.22
 	webtyp.com/ddl v0.0.15
-	webtyp.com/dom v0.13.13
+	webtyp.com/dom v0.13.14
 	webtyp.com/env v0.0.10
 	webtyp.com/fetch v0.1.28
 	webtyp.com/fmt v1.0.0
-	webtyp.com/form v0.4.8
+	webtyp.com/form v0.4.11
 	webtyp.com/goflare v0.5.32
 	webtyp.com/html v0.0.21
 	webtyp.com/input v0.0.6
