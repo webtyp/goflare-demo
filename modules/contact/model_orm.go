@@ -38,8 +38,6 @@ func (m *Contact) DecodeFields(r model.FieldReader) {
 
 type ContactList []*Contact
 
-func (s *ContactList) Schema() []model.Field { return nil }
-func (s *ContactList) Pointers() []any     { return nil }
 func (s *ContactList) Len() int             { return len(*s) }
 func (s *ContactList) At(i int) model.Fielder { return (*s)[i] }
 func (s *ContactList) Append() model.Fielder  { v := &Contact{}; *s = append(*s, v); return v }
@@ -111,8 +109,6 @@ func (m *EmailPayload) DecodeFields(r model.FieldReader) {
 
 type EmailPayloadList []*EmailPayload
 
-func (s *EmailPayloadList) Schema() []model.Field { return nil }
-func (s *EmailPayloadList) Pointers() []any     { return nil }
 func (s *EmailPayloadList) Len() int             { return len(*s) }
 func (s *EmailPayloadList) At(i int) model.Fielder { return (*s)[i] }
 func (s *EmailPayloadList) Append() model.Fielder  { v := &EmailPayload{}; *s = append(*s, v); return v }
