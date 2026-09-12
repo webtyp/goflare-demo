@@ -50,7 +50,7 @@ require (
 	webtyp.com/jsvalue v0.1.4 // indirect
 	webtyp.com/keyring v0.2.4 // indirect
 	webtyp.com/sqlt v0.0.10 // indirect
-	webtyp.com/storage v0.0.7 // indirect
+	webtyp.com/storage v0.0.8 // indirect
 	webtyp.com/time v0.5.5 // indirect
 	webtyp.com/webauthn v0.1.3 // indirect
 	webtyp.com/widget v0.6.29 // indirect
