@@ -7,7 +7,7 @@ require (
 	webtyp.com/css v0.4.22
 	webtyp.com/ddl v0.0.15
 	webtyp.com/dom v0.13.14
-	webtyp.com/env v0.0.10
+	webtyp.com/env v0.0.12
 	webtyp.com/fetch v0.1.28
 	webtyp.com/fmt v1.0.0
 	webtyp.com/form v0.4.11
