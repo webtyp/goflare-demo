@@ -14,7 +14,7 @@ import (
 const deployYML = `name: Deploy to Cloudflare Pages
 on:
   push:
-    branches: [main]
+    branches: [deploy]
   workflow_dispatch:
 
 concurrency:
