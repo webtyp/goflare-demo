@@ -13,7 +13,7 @@ require (
 	webtyp.com/form v0.4.13
 	webtyp.com/goflare v0.5.32
 	webtyp.com/html v0.0.24
-	webtyp.com/input v0.0.6
+	webtyp.com/input v0.0.9
 	webtyp.com/js v0.0.10
 	webtyp.com/json v0.5.26
 	webtyp.com/model v0.1.9
