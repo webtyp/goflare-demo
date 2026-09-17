@@ -18,7 +18,7 @@ require (
 	webtyp.com/json v0.5.26
 	webtyp.com/model v0.1.9
 	webtyp.com/orm v0.12.4
-	webtyp.com/router v0.1.39
+	webtyp.com/router v0.1.40
 	webtyp.com/server v0.2.58
 	webtyp.com/sqlite v0.3.6
 	webtyp.com/unixid v0.2.28
