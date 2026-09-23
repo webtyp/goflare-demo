@@ -47,7 +47,7 @@ require (
 	webtyp.com/dbus v0.1.1 // indirect
 	webtyp.com/filetype v0.0.6 // indirect
 	webtyp.com/font v0.0.5 // indirect
-	webtyp.com/jsvalue v0.1.4 // indirect
+	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.4 // indirect
 	webtyp.com/sqlt v0.0.10 // indirect
 	webtyp.com/storage v0.1.0 // indirect
