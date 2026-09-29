@@ -14,7 +14,7 @@ require (
 	webtyp.com/goflare v0.5.33
 	webtyp.com/html v0.0.24
 	webtyp.com/input v0.0.9
-	webtyp.com/js v0.0.10
+	webtyp.com/js v0.0.11
 	webtyp.com/json v0.5.26
 	webtyp.com/model v0.2.0
 	webtyp.com/orm v0.12.4
