@@ -1,6 +1,6 @@
 module webtyp.com/goflare-demo
 
-go 1.25.2
+go 1.26.8
 
 require (
 	webtyp.com/cloudflare v0.0.32
@@ -19,7 +19,7 @@ require (
 	webtyp.com/model v0.2.0
 	webtyp.com/orm v0.12.4
 	webtyp.com/router v0.3.0
-	webtyp.com/server v0.2.67
+	webtyp.com/server v0.2.68
 	webtyp.com/sqlite v0.3.6
 	webtyp.com/unixid v0.2.28
 )
@@ -49,6 +49,7 @@ require (
 	webtyp.com/font v0.0.5 // indirect
 	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.4 // indirect
+	webtyp.com/pwa v0.1.1 // indirect
 	webtyp.com/sqlt v0.0.10 // indirect
 	webtyp.com/storage v0.1.0 // indirect
 	webtyp.com/time v0.5.7 // indirect
