@@ -6,7 +6,7 @@ require (
 	webtyp.com/cloudflare v0.0.32
 	webtyp.com/css v0.4.27
 	webtyp.com/ddl v0.0.15
-	webtyp.com/dom v0.13.18
+	webtyp.com/dom v0.13.20
 	webtyp.com/env v0.0.12
 	webtyp.com/fetch v0.1.28
 	webtyp.com/fmt v1.0.0
