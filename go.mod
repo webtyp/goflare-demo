@@ -14,7 +14,7 @@ require (
 	webtyp.com/form v0.4.22
 	webtyp.com/goflare v0.5.35
 	webtyp.com/html v0.0.24
-	webtyp.com/input v0.0.9
+	webtyp.com/input v0.0.13
 	webtyp.com/js v0.1.1
 	webtyp.com/json v0.5.29
 	webtyp.com/model v0.2.2
@@ -51,6 +51,7 @@ require (
 	webtyp.com/font v0.0.5 // indirect
 	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.4 // indirect
+	webtyp.com/lang v0.1.0 // indirect
 	webtyp.com/pwa v0.1.1 // indirect
 	webtyp.com/sqlt v0.0.10 // indirect
 	webtyp.com/storage v0.1.0 // indirect
