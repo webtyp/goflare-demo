@@ -1,6 +1,7 @@
 package contact
 
 import (
+	"webtyp.com/escape"
 	"webtyp.com/fetch"
 	"webtyp.com/fmt"
 	"webtyp.com/json"
@@ -12,9 +13,9 @@ func sendEmail(data Contact, apiKey string) error {
 	}
 
 	// Escape user input to prevent HTML injection in the email body
-	safeNombre := fmt.Convert(data.Nombre).EscapeHTML()
-	safeEmail := fmt.Convert(data.Email).EscapeHTML()
-	safeMensaje := fmt.Convert(data.Mensaje).EscapeHTML()
+	safeNombre := escape.HTML(data.Nombre)
+	safeEmail := escape.HTML(data.Email)
+	safeMensaje := escape.HTML(data.Mensaje)
 
 	payload := &EmailPayload{
 		From:    "onboarding@resend.dev",
