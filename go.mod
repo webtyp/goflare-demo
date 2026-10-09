@@ -22,7 +22,7 @@ require (
 	webtyp.com/router v0.3.2
 	webtyp.com/server v0.2.77
 	webtyp.com/sqlite v0.3.6
-	webtyp.com/unixid v0.2.28
+	webtyp.com/unixid v0.3.0
 )
 
 require (
