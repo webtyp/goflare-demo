@@ -54,7 +54,7 @@ require (
 	webtyp.com/lang v0.1.3 // indirect
 	webtyp.com/pwa v0.1.1 // indirect
 	webtyp.com/sqlt v0.0.11 // indirect
-	webtyp.com/storage v0.1.3 // indirect
+	webtyp.com/storage v0.1.4 // indirect
 	webtyp.com/time v0.5.7 // indirect
 	webtyp.com/webauthn v0.1.3 // indirect
 	webtyp.com/widget v0.6.37 // indirect
