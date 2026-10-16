@@ -50,7 +50,7 @@ require (
 	webtyp.com/filetype v0.0.6 // indirect
 	webtyp.com/font v0.0.5 // indirect
 	webtyp.com/jsvalue v0.1.6 // indirect
-	webtyp.com/keyring v0.2.8 // indirect
+	webtyp.com/keyring v0.2.9 // indirect
 	webtyp.com/lang v0.1.6 // indirect
 	webtyp.com/pwa v0.2.0 // indirect
 	webtyp.com/sqlt v0.0.11 // indirect
