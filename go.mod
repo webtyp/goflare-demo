@@ -45,6 +45,7 @@ require (
 	webtyp.com/base64 v0.0.6 // indirect
 	webtyp.com/color v0.1.2 // indirect
 	webtyp.com/context v0.0.23 // indirect
+	webtyp.com/date v0.0.10 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
 	webtyp.com/filepath v0.1.0 // indirect
 	webtyp.com/filetype v0.0.6 // indirect
@@ -55,7 +56,7 @@ require (
 	webtyp.com/pwa v0.2.0 // indirect
 	webtyp.com/sqlt v0.0.11 // indirect
 	webtyp.com/storage v0.1.8 // indirect
-	webtyp.com/time v0.5.7 // indirect
+	webtyp.com/time v0.6.0 // indirect
 	webtyp.com/webauthn v0.1.6 // indirect
 	webtyp.com/widget v0.6.43 // indirect
 )
