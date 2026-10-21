@@ -58,5 +58,5 @@ require (
 	webtyp.com/storage v0.1.8 // indirect
 	webtyp.com/time v0.6.2 // indirect
 	webtyp.com/webauthn v0.1.6 // indirect
-	webtyp.com/widget v0.6.43 // indirect
+	webtyp.com/widget v0.6.44 // indirect
 )
