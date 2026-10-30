@@ -44,8 +44,8 @@ This applies to **all files** in the project: `web/server.go`, `edge/main.go`,
 Never open a DB connection inside a handler or on every request. The DB must be
 constructed once at process/isolate startup and passed to handlers via closure:
 
-- `web/server.go` → `d1.NewLocal(":memory:")` + `db.CreateTable(...)` → `routes.Register(r, db)`
-- `edge/main.go` → `d1.NewEdge("DB")` + `db.CreateTable(...)` → `routes.Register(r, db)`
+- `web/server.go` → `d1.NewLocal(":memory:")` + `ddl.New(...).Sync(...)` → `routes.Register(r, db)`
+- `edge/main.go` → `d1.NewEdge("DB")` + `ddl.New(...).Sync(...)` → `routes.Register(r, db)`
 
 Handlers receive `*orm.DB` as a constructor parameter and return `router.HandlerFunc`.
 `db_host.go` and `db_wasm.go` are **removed** — DB construction does not belong in
