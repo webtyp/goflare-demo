@@ -5,7 +5,7 @@ go 1.26.8
 require (
 	webtyp.com/cloudflare v0.0.39
 	webtyp.com/css v0.4.30
-	webtyp.com/ddl v0.0.39
+	webtyp.com/ddl v0.0.45
 	webtyp.com/dom v0.13.29
 	webtyp.com/env v0.1.3
 	webtyp.com/escape v0.1.0
@@ -61,7 +61,7 @@ require (
 	webtyp.com/keyring v0.2.9 // indirect
 	webtyp.com/lang v0.1.12 // indirect
 	webtyp.com/pwa v0.2.13 // indirect
-	webtyp.com/sqlt v0.0.11 // indirect
+	webtyp.com/sqlt v0.0.14 // indirect
 	webtyp.com/storage v0.1.18 // indirect
 	webtyp.com/time v0.6.4 // indirect
 	webtyp.com/webauthn v0.1.16 // indirect
