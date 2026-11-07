@@ -59,7 +59,7 @@ require (
 	webtyp.com/font v0.0.5 // indirect
 	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.9 // indirect
-	webtyp.com/lang v0.1.13 // indirect
+	webtyp.com/lang v0.1.14 // indirect
 	webtyp.com/pwa v0.2.13 // indirect
 	webtyp.com/sqlt v0.0.14 // indirect
 	webtyp.com/storage v0.1.18 // indirect
