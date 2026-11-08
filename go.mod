@@ -18,8 +18,8 @@ require (
 	webtyp.com/js v0.1.3
 	webtyp.com/json v0.5.40
 	webtyp.com/model v0.2.15
-	webtyp.com/orm v0.12.26
-	webtyp.com/router v0.4.17
+	webtyp.com/orm v0.12.28
+	webtyp.com/router v0.4.19
 	webtyp.com/server v0.2.119
 	webtyp.com/sqlite v0.3.26
 	webtyp.com/unixid v0.3.1
@@ -53,6 +53,7 @@ require (
 	webtyp.com/calendar v0.1.0 // indirect
 	webtyp.com/color v0.1.2 // indirect
 	webtyp.com/context v0.0.23 // indirect
+	webtyp.com/crud v0.0.5 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
 	webtyp.com/filepath v0.1.0 // indirect
 	webtyp.com/filetype v0.0.6 // indirect
