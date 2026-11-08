@@ -20,7 +20,7 @@ require (
 	webtyp.com/model v0.2.15
 	webtyp.com/orm v0.12.26
 	webtyp.com/router v0.4.17
-	webtyp.com/server v0.2.115
+	webtyp.com/server v0.2.119
 	webtyp.com/sqlite v0.3.26
 	webtyp.com/unixid v0.3.1
 )
