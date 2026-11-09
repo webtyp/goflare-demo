@@ -9,7 +9,7 @@ require (
 	webtyp.com/dom v0.13.29
 	webtyp.com/env v0.1.3
 	webtyp.com/escape v0.1.0
-	webtyp.com/fetch v0.1.29
+	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.0
 	webtyp.com/form v0.4.52
 	webtyp.com/goflare v0.5.47
