@@ -11,7 +11,7 @@ require (
 	webtyp.com/escape v0.1.0
 	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.0
-	webtyp.com/form v0.4.52
+	webtyp.com/form v0.4.65
 	webtyp.com/goflare v0.5.47
 	webtyp.com/html v0.0.30
 	webtyp.com/input v0.2.0
@@ -52,18 +52,21 @@ require (
 	webtyp.com/base64 v0.0.6 // indirect
 	webtyp.com/calendar v0.1.0 // indirect
 	webtyp.com/color v0.1.2 // indirect
+	webtyp.com/components v0.8.72 // indirect
 	webtyp.com/context v0.0.23 // indirect
 	webtyp.com/crud v0.0.5 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
 	webtyp.com/filepath v0.1.0 // indirect
 	webtyp.com/filetype v0.1.1 // indirect
 	webtyp.com/font v0.0.5 // indirect
+	webtyp.com/icons v0.0.39 // indirect
 	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.9 // indirect
 	webtyp.com/lang v0.1.16 // indirect
 	webtyp.com/pwa v0.2.13 // indirect
 	webtyp.com/sqlt v0.0.14 // indirect
 	webtyp.com/storage v0.1.19 // indirect
+	webtyp.com/svg v0.3.30 // indirect
 	webtyp.com/time v0.6.4 // indirect
 	webtyp.com/webauthn v0.1.16 // indirect
 	webtyp.com/widget v0.6.47 // indirect
