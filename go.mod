@@ -10,7 +10,7 @@ require (
 	webtyp.com/env v0.1.3
 	webtyp.com/escape v0.1.0
 	webtyp.com/fetch v0.1.30
-	webtyp.com/fmt v1.0.1
+	webtyp.com/fmt v1.0.2
 	webtyp.com/form v0.4.65
 	webtyp.com/goflare v0.5.47
 	webtyp.com/html v0.0.30
