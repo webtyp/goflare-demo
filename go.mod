@@ -69,5 +69,5 @@ require (
 	webtyp.com/svg v0.3.30 // indirect
 	webtyp.com/time v0.6.4 // indirect
 	webtyp.com/webauthn v0.1.16 // indirect
-	webtyp.com/widget v0.6.47 // indirect
+	webtyp.com/widget v0.6.48 // indirect
 )
