@@ -11,7 +11,7 @@ require (
 	webtyp.com/escape v0.1.0
 	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.2
-	webtyp.com/form v0.4.65
+	webtyp.com/form v0.4.66
 	webtyp.com/goflare v0.5.47
 	webtyp.com/html v0.0.30
 	webtyp.com/input v0.2.0
@@ -54,6 +54,7 @@ require (
 	webtyp.com/color v0.1.2 // indirect
 	webtyp.com/components v0.8.73 // indirect
 	webtyp.com/context v0.0.23 // indirect
+	webtyp.com/country v0.0.1 // indirect
 	webtyp.com/crud v0.0.5 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
 	webtyp.com/filepath v0.1.0 // indirect
