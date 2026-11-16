@@ -11,7 +11,7 @@ require (
 	webtyp.com/escape v0.1.0
 	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.2
-	webtyp.com/form v0.4.66
+	webtyp.com/form v0.4.68
 	webtyp.com/goflare v0.5.47
 	webtyp.com/html v0.0.30
 	webtyp.com/input v0.2.4
