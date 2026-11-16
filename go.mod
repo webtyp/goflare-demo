@@ -14,7 +14,7 @@ require (
 	webtyp.com/form v0.4.66
 	webtyp.com/goflare v0.5.47
 	webtyp.com/html v0.0.30
-	webtyp.com/input v0.2.0
+	webtyp.com/input v0.2.4
 	webtyp.com/js v0.1.3
 	webtyp.com/json v0.5.40
 	webtyp.com/model v0.2.23
@@ -54,7 +54,7 @@ require (
 	webtyp.com/color v0.1.2 // indirect
 	webtyp.com/components v0.8.73 // indirect
 	webtyp.com/context v0.0.23 // indirect
-	webtyp.com/country v0.0.1 // indirect
+	webtyp.com/country v0.0.2 // indirect
 	webtyp.com/crud v0.0.5 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
 	webtyp.com/filepath v0.1.0 // indirect
