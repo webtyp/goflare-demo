@@ -52,7 +52,7 @@ require (
 	webtyp.com/base64 v0.0.6 // indirect
 	webtyp.com/calendar v0.1.0 // indirect
 	webtyp.com/color v0.1.2 // indirect
-	webtyp.com/components v0.8.73 // indirect
+	webtyp.com/components v0.8.75 // indirect
 	webtyp.com/context v0.0.23 // indirect
 	webtyp.com/country v0.0.2 // indirect
 	webtyp.com/crud v0.0.5 // indirect
@@ -60,7 +60,7 @@ require (
 	webtyp.com/filepath v0.1.0 // indirect
 	webtyp.com/filetype v0.1.1 // indirect
 	webtyp.com/font v0.0.5 // indirect
-	webtyp.com/icons v0.0.39 // indirect
+	webtyp.com/icons v0.0.42 // indirect
 	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.9 // indirect
 	webtyp.com/lang v0.1.16 // indirect
