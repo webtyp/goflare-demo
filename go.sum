@@ -163,5 +163,5 @@ webtyp.com/unixid v0.3.1 h1:qQBK0nWeTme94GPQl4Ixlo5dlmWI7ZByG0Xwsjqtyas=
 webtyp.com/unixid v0.3.1/go.mod h1:JHhFQ/vT5KoLq0CKwAMGadZyxTzuAyjgtGnXzRP28ac=
 webtyp.com/webauthn v0.1.16 h1:JgR4KiUgwnb0wmCTHjayiyWQEhV1BTAzEqeFwnmALZg=
 webtyp.com/webauthn v0.1.16/go.mod h1:U3ea6ePslpyNWtMyweq+NAslSaU+J9v1HYO3tGZwdvQ=
-webtyp.com/widget v0.6.48 h1:5AgHl5CldBjL52DD9ZNlvZ560oftx2evBeG1xk9sa/I=
-webtyp.com/widget v0.6.48/go.mod h1:7+4i0QpmyH/GYiQAliXJgCK3jgTiUfi/p+hzPpSfk8Q=
+webtyp.com/widget v0.6.49 h1:TSuAJhyov1sjAH5cDNI7iu4d0r5ZozXAziSAV1g3p6g=
+webtyp.com/widget v0.6.49/go.mod h1:7+4i0QpmyH/GYiQAliXJgCK3jgTiUfi/p+hzPpSfk8Q=
