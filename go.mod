@@ -57,7 +57,7 @@ require (
 	webtyp.com/country v0.0.2 // indirect
 	webtyp.com/crud v0.0.5 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
-	webtyp.com/filepath v0.1.0 // indirect
+	webtyp.com/filepath v0.1.3 // indirect
 	webtyp.com/filetype v0.1.1 // indirect
 	webtyp.com/font v0.0.5 // indirect
 	webtyp.com/icons v0.0.42 // indirect
