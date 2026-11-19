@@ -8,7 +8,6 @@ require (
 	webtyp.com/ddl v0.0.46
 	webtyp.com/dom v0.13.29
 	webtyp.com/env v0.1.3
-	webtyp.com/escape v0.1.0
 	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.2
 	webtyp.com/form v0.4.68
@@ -57,6 +56,7 @@ require (
 	webtyp.com/country v0.0.2 // indirect
 	webtyp.com/crud v0.0.5 // indirect
 	webtyp.com/dbus v0.1.1 // indirect
+	webtyp.com/escape v0.1.0 // indirect
 	webtyp.com/filepath v0.1.3 // indirect
 	webtyp.com/filetype v0.1.1 // indirect
 	webtyp.com/font v0.0.5 // indirect
