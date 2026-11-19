@@ -64,7 +64,7 @@ require (
 	webtyp.com/jsvalue v0.1.6 // indirect
 	webtyp.com/keyring v0.2.9 // indirect
 	webtyp.com/lang v0.1.16 // indirect
-	webtyp.com/pwa v0.2.13 // indirect
+	webtyp.com/pwa v0.2.24 // indirect
 	webtyp.com/sqlt v0.0.14 // indirect
 	webtyp.com/storage v0.1.19 // indirect
 	webtyp.com/svg v0.3.30 // indirect
