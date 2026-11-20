@@ -6,11 +6,11 @@ require (
 	webtyp.com/cloudflare v0.0.39
 	webtyp.com/css v0.4.30
 	webtyp.com/ddl v0.0.46
-	webtyp.com/dom v0.13.29
+	webtyp.com/dom v0.13.32
 	webtyp.com/env v0.1.3
 	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.2
-	webtyp.com/form v0.4.68
+	webtyp.com/form v0.4.72
 	webtyp.com/goflare v0.5.47
 	webtyp.com/html v0.0.30
 	webtyp.com/input v0.2.4
@@ -51,7 +51,7 @@ require (
 	webtyp.com/base64 v0.0.6 // indirect
 	webtyp.com/calendar v0.1.0 // indirect
 	webtyp.com/color v0.1.2 // indirect
-	webtyp.com/components v0.8.75 // indirect
+	webtyp.com/components v0.8.76 // indirect
 	webtyp.com/context v0.0.23 // indirect
 	webtyp.com/country v0.0.2 // indirect
 	webtyp.com/crud v0.0.5 // indirect
@@ -67,8 +67,8 @@ require (
 	webtyp.com/pwa v0.2.24 // indirect
 	webtyp.com/sqlt v0.0.14 // indirect
 	webtyp.com/storage v0.1.19 // indirect
-	webtyp.com/svg v0.3.30 // indirect
+	webtyp.com/svg v0.3.43 // indirect
 	webtyp.com/time v0.6.4 // indirect
 	webtyp.com/webauthn v0.1.16 // indirect
-	webtyp.com/widget v0.6.49 // indirect
+	webtyp.com/widget v0.6.50 // indirect
 )
