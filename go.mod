@@ -6,7 +6,7 @@ require (
 	webtyp.com/cloudflare v0.0.39
 	webtyp.com/css v0.4.30
 	webtyp.com/ddl v0.0.46
-	webtyp.com/dom v0.13.32
+	webtyp.com/dom v0.13.34
 	webtyp.com/env v0.1.3
 	webtyp.com/fetch v0.1.30
 	webtyp.com/fmt v1.0.2
@@ -68,7 +68,7 @@ require (
 	webtyp.com/sqlt v0.0.14 // indirect
 	webtyp.com/storage v0.1.19 // indirect
 	webtyp.com/svg v0.3.43 // indirect
-	webtyp.com/time v0.6.4 // indirect
+	webtyp.com/time v0.6.7 // indirect
 	webtyp.com/webauthn v0.1.16 // indirect
 	webtyp.com/widget v0.6.50 // indirect
 )
